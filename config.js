@@ -1,7 +1,1 @@
-// À modifier une seule fois : les deux liens du portail.
-window.GUNKAI = {
-  telechargement: "#",   // lien de la Release GitHub (fichier GUNKAI.exe) ou d'un partage de fichier
-  discord: "#",          // lien d'invitation permanent du serveur Discord
-  version: "Alpha",      // texte affiché sous le bouton
-  taille: "≈ 830 Mo"
-};
+window.GUNKAI = {telechargement: "https://github.com/yoshilwsn/gunkai-telecharger/releases/download/Gunkai(prealpha)/GUNKAI.exe", discord: "#", version: "Pre-alpha", taille: "≈ 830 Mo"};
