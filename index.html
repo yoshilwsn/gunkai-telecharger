@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GUNKAI — Rise of Gokkan</title>
+<meta name="description" content="GUNKAI : stratégie diplomatique entre dix peuples, combats tactiques au tour par tour. Télécharge l'alpha pour Windows.">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--nuit:#1b1410;--bois:#3a2410;--creme:#f5e6c8;--or:#f0c24a;--or2:#c9962b;--vert:#2f6b4f;--texte:#e9dcc2;--doux:#bdb09a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--nuit);color:var(--texte);font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+a{color:var(--or)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.hero{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;
+  background:linear-gradient(rgba(20,12,6,.35),rgba(20,12,6,.78)),url(fond.jpg) center/cover}
+.hero .in{padding:48px 16px;max-width:760px}
+.hero img.logo{width:min(560px,86vw);height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.6))}
+.hero img.rise{width:min(380px,70vw);margin-top:6px;opacity:.95}
+.hero p.acc{font-size:clamp(18px,2.6vw,22px);margin:22px auto 30px;color:var(--creme);text-shadow:0 2px 8px #000}
+.btn{display:inline-block;padding:16px 34px;border-radius:14px;font-weight:800;font-size:19px;letter-spacing:.3px;text-decoration:none;
+  background:linear-gradient(#ffd96b,var(--or2));color:var(--bois);border:3px solid #fff2b0;box-shadow:0 8px 22px rgba(0,0,0,.5);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:rgba(0,0,0,.35);color:var(--creme);border:2px solid var(--or2);box-shadow:none;margin-left:10px}
+.meta{margin-top:14px;font-size:14px;color:var(--doux)}
+section{padding:68px 0}
+h2{font-size:clamp(26px,4vw,36px);color:var(--or);margin:0 0 8px;text-align:center}
+.sub{text-align:center;color:var(--doux);max-width:640px;margin:0 auto 38px}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.carte{background:#2a1c12;border:1px solid #5a3f22;border-radius:16px;padding:22px}
+.carte h3{margin:0 0 6px;color:var(--creme);font-size:20px}
+.carte p{margin:0;color:var(--doux);font-size:15.5px}
+.peuples{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.peuple{text-align:center;background:#241810;border:1px solid #4d3720;border-radius:14px;padding:16px 8px}
+.peuple img{width:84px;height:84px;object-fit:contain}
+.peuple b{display:block;color:var(--creme);margin-top:6px}
+.peuple span{font-size:13.5px;color:var(--doux);line-height:1.35;display:block}
+ol.etapes{max-width:680px;margin:0 auto;padding-left:22px}
+ol.etapes li{margin:0 0 14px}
+.note{max-width:680px;margin:22px auto 0;padding:16px 18px;border-left:4px solid var(--or2);background:#2a1c12;border-radius:8px;font-size:15.5px;color:var(--doux)}
+.note b{color:var(--creme)}
+footer{padding:36px 0 48px;text-align:center;color:var(--doux);font-size:14px;border-top:1px solid #3a2a1a}
+footer img{height:54px;display:block;margin:0 auto 10px;opacity:.9}
+@media(max-width:560px){.btn.ghost{margin:12px 0 0}.btn{display:block}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+  <img class="logo" src="logo_day.png" alt="GUNKAI">
+  <img class="rise" src="logo_rise_sous_titre.png" alt="Rise of Gokkan">
+  <p class="acc">Dix peuples. Une seule table ronde. Négociez, trahissez, conquérez : chaque décision se paie.</p>
+  <a class="btn" id="dl" href="#">Télécharger pour Windows</a><a class="btn ghost" id="dc" href="#">Rejoindre le Discord</a>
+  <div class="meta" id="meta"></div>
+</div></header>
+
+<section><div class="wrap">
+  <h2>Un monde, dix chefs</h2>
+  <p class="sub">Un jeu de stratégie diplomatique asynchrone, des combats tactiques au tour par tour, et un monde où le Conseil des 11 observe tout.</p>
+  <div class="cartes">
+    <div class="carte"><h3>Diplomatie sans filet</h3><p>Alliances, pactes, lettres scellées, rumeurs. Trahir un allié peut rapporter gros, et coûter plus cher encore.</p></div>
+    <div class="carte"><h3>Combats tactiques</h3><p>Un chef, un bataillon, des sorts par école. Chaque affrontement se joue case par case, au tour par tour.</p></div>
+    <div class="carte"><h3>Expéditions et conquêtes</h3><p>Explorez, revendiquez des terres libres, affrontez les gardiens, posez vos avant-postes. Certaines zones sont sûres, d'autres pas.</p></div>
+    <div class="carte"><h3>Le sort du chef en jeu</h3><p>Un chef vaincu peut être épargné… ou exécuté. Savoir négocier peut vous sauver la vie.</p></div>
+  </div>
+</div></section>
+
+<section style="background:#17100b"><div class="wrap">
+  <h2>Les peuples</h2>
+  <p class="sub">Chaque peuple a son territoire, ses sorts, ses métiers et ses secrets.</p>
+  <div class="peuples">
+    <div class="peuple"><img src="emb_attar.png" alt=""><b>Attar</b><span>Désert et odorat</span></div>
+    <div class="peuple"><img src="emb_sufars.png" alt=""><b>Sufar</b><span>Ferrailleurs des faubourgs</span></div>
+    <div class="peuple"><img src="emb_vetrheim.png" alt=""><b>Vetrheim</b><span>Montagnes enneigées</span></div>
+    <div class="peuple"><img src="emb_saivo.png" alt=""><b>Saivo</b><span>Toundra et lacs gelés</span></div>
+    <div class="peuple"><img src="emb_gamar.png" alt=""><b>Gamar</b><span>Plaines fertiles</span></div>
+    <div class="peuple"><img src="emb_karru.png" alt=""><b>Karru</b><span>Badlands, gardiens de routes</span></div>
+    <div class="peuple"><img src="emb_manava.png" alt=""><b>Manava</b><span>Côtes tropicales</span></div>
+    <div class="peuple"><img src="emb_vaka.png" alt=""><b>Vaka</b><span>Archipels, pêcheurs-marchands</span></div>
+    <div class="peuple"><img src="emb_kagero.png" alt=""><b>Kagerō</b><span>Forêts de bambous</span></div>
+    <div class="peuple"><img src="emb_korobo.png" alt=""><b>Korobo</b><span>Forêts brumeuses</span></div>
+    <div class="peuple"><img src="emb_eldir.png" alt=""><b>Eldir</b><span>Cité-état neutre</span></div>
+  </div>
+</div></section>
+
+<section id="installer"><div class="wrap">
+  <h2>Installer en 3 étapes</h2>
+  <p class="sub">Un seul fichier, aucune installation.</p>
+  <ol class="etapes">
+    <li>Clique sur « Télécharger pour Windows » et attends la fin du téléchargement.</li>
+    <li>Double-clique sur <b>Gunkai (pre alpha)</b>.</li>
+    <li>Si Windows affiche « Windows a protégé votre ordinateur », clique sur <b>Informations complémentaires</b> puis <b>Exécuter quand même</b>.</li>
+  </ol>
+  <div class="note"><b>Pourquoi cet avertissement ?</b> Le jeu est un projet indépendant et son fichier n'est pas encore signé numériquement : Windows prévient pour tout programme qu'il ne connaît pas. Le fichier ne contient rien d'autre que le jeu. Ta sauvegarde est stockée sur ton PC.</div>
+</div></section>
+
+<footer><div class="wrap">
+  <img src="studio_eldir.png" alt="Studio Eldir">
+  GUNKAI — Rise of Gokkan · un jeu du Studio Eldir · version alpha, des bugs sont à prévoir, signale-les sur le Discord.
+</div></footer>
+
+<script src="config.js"></script>
+<script>
+  var c = window.GUNKAI || {};
+  var dl = document.getElementById("dl"), dc = document.getElementById("dc");
+  dl.href = c.telechargement || "#"; dc.href = c.discord || "#";
+  document.getElementById("meta").textContent = [c.version, c.taille, "Windows 10 / 11"].filter(Boolean).join(" · ");
+  if (!c.telechargement || c.telechargement === "#") { dl.addEventListener("click", function(e){ e.preventDefault(); alert("Le lien de téléchargement n'est pas encore disponible."); }); }
+  if (!c.discord || c.discord === "#") { dc.style.display = "none"; }
+</script>
+</body>
+</html>
